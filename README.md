@@ -10,17 +10,10 @@ A responsive personal portfolio website built from scratch using HTML, CSS, and 
 - **Hobbies:** Personal interests.
 - **Contact Form:** Form for entering name, email, and message.
 - **Theme Switcher:** Button to toggle between light and dark themes.
-- **Responsive Design:** Flexbox and CSS media queries for mobile devices.
-
 ## Technologies Used
 - HTML5
 - CSS3 (Flexbox and Media Queries)
 - JavaScript (DOM Manipulation and Event Handling)
-
-## How to Run
-1. Clone or download the project.
-2. Open `index.html` in your web browser.
-3. Click the **Toggle Theme** button to switch between themes.
 
 ## Project Structure
 ```text
