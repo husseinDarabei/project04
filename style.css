@@ -27,6 +27,7 @@ p+p{margin-top:14px}
 h1{font-size:clamp(2.8rem,8vw,5.6rem);font-weight:700;margin-bottom:18px}
 .role{font-size:clamp(1.1rem,2.2vw,1.4rem);max-width:30ch;color:#d5e3f7}
 .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.actions.center{justify-content:center;margin-top:0}
 .hint{margin-top:34px;font:.8rem "IBM Plex Mono",monospace;color:#8aa3c6}
 .btn{display:inline-block;padding:12px 24px;border-radius:99px;text-decoration:none;font-weight:600;transition:transform .2s,background .2s}
 .btn:hover{transform:translateY(-2px)}
