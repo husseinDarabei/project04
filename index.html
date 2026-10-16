@@ -2,100 +2,144 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hussein Aldarabea | Network & Communication Engineer</title>
+<meta name="description" content="Communication & Computer Engineer, CCNA certified, focused on network infrastructure and network security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-<title>Hussein's Portfolio</title>
 </head>
 <body>
-<header>
-<nav>
-<h2>Hussein's Portfolio</h2>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#hobbies">Hobbies</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+<header class="nav" id="top">
+  <a class="brand" href="#top">H. Aldarabea</a>
+  <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a>
+    <a class="pill" href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
-<section id="about">
-<h1>About Me</h1>
-<img src="assets/profile.jpg" alt="My Profile Photo">
-<p>I recently started a Cybersecurity program at 42 Amman, where I learned Linux commands, Git, and GitHub. During my first two weeks, I also gained hands-on experience in building a complete, responsive website using HTML, CSS, and JavaScript. This experience has helped me strengthen my technical skills, problem-solving abilities, and understanding of web development and version control.</p>
-<div class="social-links">
-<a href="https://github.com/husseinDarabei/project04" target="_blank" rel="noopener noreferrer">GitHub</a>
-</div>
-
+<section class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-text">
+    <p class="status"><span class="dot"></span>Open to entry-level networking and security roles</p>
+    <h1>Hussein Aldarabea</h1>
+    <p class="role">Communication &amp; Computer Engineer. CCNA certified. I build and secure networks.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <p class="hint">Click anywhere on the network to send a packet.</p>
+  </div>
 </section>
 
-<section id="skills">
-<h2>My Skills</h2>
-<div class="skills-grid">
-<div>HTML</div>
-<div>CSS</div>
-<div>JavaScript</div>
-<div>Git & GitHub</div>
-
-</div>
+<section id="about" class="wrap about">
+  <div class="side">
+    <h2>About</h2>
+    <figure class="photo"><img src="assets/profile.jpg" alt="Portrait of Hussein Aldarabea" width="200" height="240" loading="lazy"><span aria-hidden="true">HA</span></figure>
+  </div>
+  <div>
+    <p>I graduated in 2026 with a Bachelor's in Communication &amp; Computer Engineering from Al-Zaytoonah University of Jordan. I hold a CCNA and have hands-on training in network configuration, troubleshooting, VLANs, OSPF and ACLs.</p>
+    <p>For my graduation project I built a bootable USB cybersecurity toolkit that automates network scanning and vulnerability assessment. I also work comfortably with Linux, MySQL and cloud platforms, and I'm looking for a first role in networking or network security.</p>
+    <ul class="facts">
+      <li><strong>CCNA</strong><span>Cisco, April 2026</span></li>
+      <li><strong>B.Eng.</strong><span>2021 – 2026</span></li>
+      <li><strong>2 trainings</strong><span>Cloud and networking</span></li>
+    </ul>
+  </div>
 </section>
 
-<section id="projects">
-<h2>My Projects</h2>
-<article>
-<p3>Project00</p3>
-<p>Linux, terminal commands, and Git basics.</p>
-</article>
-
-<article>
-<p3>Project01</p3>
-<p>Building web pages using HTML.</p>
-</article>
-
-<article>
-<p3>Project02</p3>
-<p>Styling web pages by using CSS.</p>
-</article>
-
-<article>
-<p3>Project03</p3>
-<p>Adding interactivity using JavaScript.</p>
-</article>
-
+<section id="experience" class="wrap">
+  <h2>Training experience</h2>
+  <ol class="timeline">
+    <li>
+      <time>Dec 2025 – Mar 2026</time>
+      <h3>Networking Trainee</h3>
+      <p class="org">Cisco Networking Academy</p>
+      <ul>
+        <li>Completed an intensive three-month program covering routing, switching, VLANs and network security.</li>
+        <li>Practiced real-world topologies in Cisco Packet Tracer.</li>
+        <li>Applied OSPF, ACL configuration and troubleshooting in lab exercises.</li>
+      </ul>
+    </li>
+    <li>
+      <time>Jul 2025 – Oct 2025</time>
+      <h3>Network &amp; Cloud Computing Trainee</h3>
+      <p class="org">Virtual Data IT</p>
+      <ul>
+        <li>Worked hands-on with AWS, Microsoft Azure and VMware on cloud and virtualization tasks.</li>
+        <li>Configured and troubleshot network devices in virtualized IT environments.</li>
+        <li>Supported infrastructure teams with incident response and system monitoring.</li>
+      </ul>
+    </li>
+  </ol>
 </section>
 
-<section id="hobbies">
-<h2>My Hobbies</h2>
-<ul>
-<li>Comuters & technologies</li>
-<li>Cyber security</li>
-<li>Virtualization</li>
-<li>Learning new skills</li>
-</ul>
+<section id="projects" class="wrap">
+  <h2>Projects</h2>
+  <article class="feature">
+    <p class="tag">Graduation project, 2026</p>
+    <h3>Bootable USB Cybersecurity Toolkit</h3>
+    <p>A portable environment that boots from a USB drive and automates network scanning and security assessment to detect vulnerabilities and misconfigurations.</p>
+    <ul>
+      <li>Scanning, analysis and incident response modules in one unified toolkit.</li>
+      <li>Basic capabilities to address the security issues it identifies.</li>
+    </ul>
+  </article>
+  <div class="grid2">
+    <article class="card">
+      <p class="tag">Academic project, 2024</p>
+      <h3>Pharmacy Database System</h3>
+      <p>A normalized MySQL schema with modules for the product catalog, prescription records and inventory, plus optimized queries for reporting.</p>
+      <p class="chips"><span>MySQL</span><span>Normalization</span><span>SQL</span></p>
+    </article>
+    <article class="card">
+      <p class="tag">Academic project, 2024</p>
+      <h3>Al Farrah Mills Database</h3>
+      <p>A full database solution for managing products, customer orders, inventory and sales data, designed for consistency and scalability.</p>
+      <p class="chips"><span>MySQL</span><span>Database design</span></p>
+    </article>
+  </div>
 </section>
 
-<section id="contact">
-<h2>Contact Me</h2>
-<form>
-<p>Mailto: <a href="mailo: aldarabei.hussein@gmail.com">
-aldarabei.hussein@gmail.com </a>
-</p>
-<label for="name">Nmae:</label>
-<input type="text" id="name" name="name" required>
-<label  for="email">Email:</label>
-<input type="email" id="email" name="email" required>
-<label for="message">Message:</label>
-<textarea id="message" name="message" required></textarea>
+<section id="skills" class="wrap">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <div><dt>Networking</dt><dd>Routing &amp; switching, VLANs, OSPF, ACLs, configuration and troubleshooting</dd></div>
+    <div><dt>Security</dt><dd>Network security, vulnerability scanning and assessment, incident response</dd></div>
+    <div><dt>Systems</dt><dd>Linux, IT infrastructure support, system monitoring, virtualized environments, cloud and fiber optic fundamentals</dd></div>
+    <div><dt>Tools</dt><dd>Cisco Packet Tracer, MySQL, AWS, Microsoft Azure, VMware</dd></div>
+    <div><dt>Languages</dt><dd>Arabic (native), English (working proficiency)</dd></div>
+    <div><dt>Working style</dt><dd>Problem solving, team collaboration, time management, analytical thinking</dd></div>
+  </dl>
+</section>
 
-<button type="submit">Send Message</button>
-</form>
+<section id="credentials" class="wrap">
+  <h2>Credentials</h2>
+  <div class="grid2">
+    <div class="card"><h3>CCNA</h3><p>Cisco Certified Network Associate, Cisco Systems, April 2026</p></div>
+    <div class="card"><h3>Machine Learning Certificate</h3><p>Coursera, September 2025</p></div>
+    <div class="card"><h3>B.Eng. Communication &amp; Computer Engineering</h3><p>Al-Zaytoonah University of Jordan, 2021 – 2026</p></div>
+    <div class="card"><h3>Sumo Robot Competition</h3><p>National-level robotics competition at Al Hussein Technical University, 2024. Received an official participation certificate.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>I'm available for entry-level roles in networking and network security in Amman or remotely.</p>
+    <a class="btn primary big" href="mailto:aldarabei.hussein@gmail.com">aldarabei.hussein@gmail.com</a>
+    <p class="links"><a href="tel:+962792697791">+962 7 9269 7791</a><a href="#" target="_blank" rel="noopener">LinkedIn</a><span>Amman, Jordan</span></p>
+  </div>
 </section>
 </main>
-
-<footer>
-<p>&copy; 2026 Hussein's Portfolio</p>
-</footer>
+<footer><p>&copy; <span id="year">2026</span> Hussein Aldarabea</p></footer>
+<script src="script.js"></script>
 </body>
 </html>
